@@ -43,7 +43,8 @@
     console.error(error);
   }else{
     html = '<img style="width:50%;" src="'+res.URI+'">';
-    document.body.innerHTML = html;
+    //document.body.innerHTML = html;
+	document.getElementById("captura").innerHTML = html;
   }
 },50);
 				
@@ -52,6 +53,9 @@
 			
         </script>
         
-        <a href="javascript:captura()">Capturar</a>
+        <h1><a href="javascript:captura()">Capturar</a></h1>
+        
+        <div id="captura"></div>
+        
     </body>
 </html>
